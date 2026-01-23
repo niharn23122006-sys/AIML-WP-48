@@ -1,0 +1,38 @@
+/* Email container */
+#email {
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Confidential and Top Secret blocks */
+#confidential,
+#top-secret {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 2px solid #000;
+    font-weight: bold;
+    transform: rotate(-10deg);
+    background-color: #fdd;
+}
+
+#top-secret {
+    transform: rotate(10deg);
+    background-color: #dfd;
+}
+
+/* Paragraphs */
+p {
+    margin-top: 15px;
+}
+
+/* Blurred spans */
+.blurred {
+    filter: blur(3px);
+    background-color: #eee;
+    padding: 0 2px;
+}
