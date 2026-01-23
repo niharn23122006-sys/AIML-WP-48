@@ -1,0 +1,56 @@
+body {
+    font-family: rgb(219, 209, 113), sans-serif;
+    background-color: #cce783;
+}
+
+/* Main To-Do List */
+.todo-list {
+    list-style: none;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(234, 239, 240);
+    border-radius: 8px;
+}
+
+/* To-Do items */
+.todo-list li {
+    margin-bottom: 15px;
+}
+
+/* Sub items */
+.sub-item {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Remove underline from links */
+.sub-item-link {
+    text-decoration: none;
+}
+
+/* Unvisited link */
+.sub-item-link:link {
+    color: #0077cc;
+}
+
+/* Visited link */
+.sub-item-link:visited {
+    color: #6a0dad;
+}
+
+/* Hover effect */
+.sub-item-link:hover {
+    color: #ff6600;
+}
+
+/* Active (clicked) */
+.sub-item-link:active {
+    color: #cc0000;
+}
+
+/* Focus outline */
+.sub-item-link:focus {
+    outline: 2px solid #00aa88;
+}
