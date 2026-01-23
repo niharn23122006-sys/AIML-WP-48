@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feature Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Feature Selection</h1>
+
+    <div class="feature-card-container">
+
+        <label class="feature-card">
+            <input type="checkbox" id="darkModeToggle">
+            Dark Mode
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            Notifications
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            Auto Updates
+        </label>
+
+    </div>
+
+    <script>
+        const darkToggle = document.getElementById("darkModeToggle");
+
+        darkToggle.addEventListener("change", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
+</body>
+</html>
+
