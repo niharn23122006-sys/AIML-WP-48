@@ -1,0 +1,33 @@
+body {
+    background-color: bisque;
+}
+
+.pricing-container {
+    background-color: rgb(28, 101, 211);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+}
+
+.premium-plan {
+  order: 2;
+}
