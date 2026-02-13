@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time-Based Greeting</title>
+</head>
+<body>
+<h1>Greeting Based on Time</h1>
+<button onclick="showGreeting()">Show
+Greeting</button>
+<script>
+function showGreeting() {
+let currentTime = new Date();
+let hours = currentTime.getHours();
+if (hours < 12) {
+alert("Good Morning!");
+} else {
+alert("Good Evening!");
+}
+}
+</script>
+</body>
+</html>
