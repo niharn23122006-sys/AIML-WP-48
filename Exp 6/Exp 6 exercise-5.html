@@ -1,0 +1,13 @@
+<input type="password" id="pass" placeholder="Enter Password">
+<button onclick="checkPass()">Check</button>
+<p id="msg"></p>
+
+<script>
+function checkPass() {
+  let pass = document.getElementById("pass").value;
+  if(pass.length < 6)
+    document.getElementById("msg").innerText = "Weak Password";
+  else
+    document.getElementById("msg").innerText = "Strong Password";
+}
+</script>
