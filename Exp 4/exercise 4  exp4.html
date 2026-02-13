@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>onclick Event Handler</title>
+</head>
+<body>
+<h1>Change Paragraph Text</h1>
+<p id="myParagraph">This is the original text.</p>
+<button onclick="changeText()">Click to Change Text</button>
+<script>
+function changeText() {
+document.getElementById("myParagraph").innerHTML = "The text has been changed!";
+}
+</script>
+</body>
+</html>
