@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Manipulation</title>
+</head>
+<body>
+<h1>Accessing HTML Elements</h1>
+<p id="demo">This is the original paragraph text.</p>
+<button onclick="changeContent()">Change Text</button>
+<script>
+function changeContent() {
+document.getElementById("demo").innerHTML = "The content has been updated using JavaScript!";
+}
+</script>
+</body>
+</html>
