@@ -1,0 +1,13 @@
+<input type="text" id="phone" placeholder="Enter Phone">
+<button onclick="checkPhone()">Check</button>
+<p id="msg"></p>
+
+<script>
+function checkPhone() {
+  let phone = document.getElementById("phone").value;
+  if(phone.length == 10 && !isNaN(phone))
+    document.getElementById("msg").innerText = "Valid Phone";
+  else
+    document.getElementById("msg").innerText = "Invalid Phone";
+}
+</script>
