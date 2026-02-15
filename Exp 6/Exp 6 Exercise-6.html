@@ -1,0 +1,17 @@
+<input type="text" id="user" placeholder="Enter Username">
+<button onclick="save()">Save</button>
+<p id="display"></p>
+
+<script>
+function save() {
+  let user = document.getElementById("user").value;
+  localStorage.setItem("username", user);
+  document.getElementById("display").innerText = user;
+}
+
+window.onload = function() {
+  document.getElementById("display").innerText =
+    localStorage.getItem("username");
+}
+</script>
+
