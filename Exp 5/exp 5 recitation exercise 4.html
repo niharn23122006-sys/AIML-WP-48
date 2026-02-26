@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 6</title>
+</head>
+<body>
+  <button id="msgBtn">Click Me</button>
+  <p id="msg"></p>
+
+  <script>
+    const msgBtn = document.getElementById("msgBtn");
+    const msg = document.getElementById("msg");
+
+    msgBtn.addEventListener("click", function () {
+      msg.textContent = "Button was clicked!";
+    });
+  </script>
+</body>
+</html>

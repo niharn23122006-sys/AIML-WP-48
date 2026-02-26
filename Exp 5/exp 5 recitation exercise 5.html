@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4</title>
+</head>
+<body>
+  <button id="addBtn">Add Paragraph</button>
+  <div id="container"></div>
+
+  <script>
+    const btn = document.getElementById("addBtn");
+    const container = document.getElementById("container");
+
+    btn.addEventListener("click", function () {
+      const p = document.createElement("p");
+      p.textContent = "This is a new paragraph.";
+      container.appendChild(p);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 7</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Type something">
+  <button id="showBtn">Show Text</button>
+  <p id="display"></p>
+
+  <script>
+    const input = document.getElementById("userInput");
+    const showBtn = document.getElementById("showBtn");
+    const display = document.getElementById("display");
+
+    showBtn.addEventListener("click", function () {
+      display.textContent = input.value;
+    });
+  </script>
+</body>
+</html>
