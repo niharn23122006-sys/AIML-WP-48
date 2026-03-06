@@ -1,0 +1,26 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send("Home Page");
+});
+
+app.get('/contact', (req, res) => {
+  res.send("Contact Page");
+});
+
+app.get('/help', (req, res) => {
+  res.send("Help Page");
+});
+
+app.get('/api/user', (req, res) => {
+  res.json({
+    name: "Rahul",
+    age: 20,
+    course: "AIML"
+  });
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
