@@ -1,0 +1,32 @@
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// temporary memory storage
+let users = [
+  { name: "Nihar", email: "nihar@gmail.com", age: 20 },
+  { name: "Rahul", email: "rahul@gmail.com", age: 21 }
+];
+
+// GET API
+app.get("/users", (req, res) => {
+  res.json(users);
+});
+
+// POST API
+app.post("/users", (req, res) => {
+  const newUser = req.body;
+  users.push(newUser);
+  res.json({
+    message: "User added successfully",
+    users: users
+  });
+});
+
+app.listen(5000, () => {
+  console.log("Server running on port 5000");
+});
